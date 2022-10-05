@@ -32,7 +32,7 @@ cmake ~/ton-env/ton \
     -Wno-dev \
     -GNinja
 
-make -j 128
+ninja -j 0
 
 # Remove the global.config file
 rm -r ~/global-config.json
