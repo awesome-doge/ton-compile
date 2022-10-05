@@ -9,8 +9,8 @@ sudo apt-get install git build-essential git make cmake clang libgflags-dev zlib
 sudo apt-get install python3 re2c -y
 git clone https://github.com/ninja-build/ninja.git
 cd ninja
-python3 ./configure.py --bootstrap
-cp ./ninja  /usr/bin
+sudo python3 ./configure.py --bootstrap
+sudo cp ./ninja  /usr/bin
 
 # generate env folder / clone ton source code
 mkdir ~/ton-env
