@@ -2,11 +2,11 @@
 
 ```bash
 # Install dependent packages
-apt-get update
-apt-get install git build-essential git make cmake clang libgflags-dev zlib1g-dev libssl-dev libreadline-dev libmicrohttpd-dev pkg-config libgsl-dev python3 python3-dev python3-pip -y
+sudo apt-get update
+sudo apt-get install git build-essential git make cmake clang libgflags-dev zlib1g-dev libssl-dev libreadline-dev libmicrohttpd-dev pkg-config libgsl-dev python3 python3-dev python3-pip -y
 
 # Install ninja
-apt-get install python3 re2c -y
+sudo apt-get install python3 re2c -y
 git clone https://github.com/ninja-build/ninja.git
 cd ninja
 python3 ./configure.py --bootstrap
