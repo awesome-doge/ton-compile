@@ -21,9 +21,6 @@ cd ~/ton-env/ton-bin
 
 cmake ~/ton-env/ton \
     -DCMAKE_BUILD_TYPE=Release \
-    -DTON_ARCH= \
-    -Wno-dev \
-    -DCMAKE_CXX_FLAGS="-std=c++17" \
     -GNinja
 
 cpunumber=$(sysctl -n hw.logicalcpu)
