@@ -14,9 +14,6 @@ mkdir ~/ton-env
 cd ~/ton-env
 git clone --recursive https://github.com/ton-blockchain/ton.git
 
-cd ~/ton-env/ton/third-party/abseil-cpp/
-git checkout 20211102.0
-
 # compile
 cd ~/ton-env/
 mkdir ton-bin
