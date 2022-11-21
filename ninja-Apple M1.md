@@ -21,7 +21,8 @@ cd ~/ton-env/ton-bin
 
 cmake ~/ton-env/ton \
     -DCMAKE_BUILD_TYPE=Release \
-    -GNinja
+    -GNinja \
+    -Wno-dev
 
 cpunumber=$(sysctl -n hw.logicalcpu)
 ninja -j $cpunumber
