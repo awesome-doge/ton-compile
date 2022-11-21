@@ -28,22 +28,22 @@ cpunumber=$(sysctl -n hw.logicalcpu)
 ninja -j $cpunumber
 
 # Remove the global.config file
-rm -r ~/global-config.json
-#rm -r ~/testnet-global.config.json
-rm -r ~/global-config-wallet.json
-rm -r ~/global-config-archive.json
-rm -r ~/global.config.json
-rm -r ~/testnet-global.config.json
+rm -r ~/ton-env/global-config.json
+#rm -r ~/ton-env/testnet-global.config.json
+rm -r ~/ton-env/global-config-wallet.json
+rm -r ~/ton-env/global-config-archive.json
+rm -r ~/ton-env/global.config.json
+rm -r ~/ton-env/testnet-global.config.json
 
 # Download the global.config file
-wget https://ton.org/global-config.json -P ~/
-#wget https://ton.org/testnet-global.config.json -P ~/
+wget https://ton.org/global-config.json -P ~/ton-env/
+#wget https://ton.org/testnet-global.config.json -P ~/ton-env/
 
-wget https://ton.org/global-config-wallet.json -P ~/
-wget https://ton.org/global-config-archive.json -P ~/
+wget https://ton.org/global-config-wallet.json -P ~/ton-env/
+wget https://ton.org/global-config-archive.json -P ~/ton-env/
 
-wget https://ton-blockchain.github.io/global.config.json -P ~/
-wget https://ton-blockchain.github.io/testnet-global.config.json -P ~/
+wget https://ton-blockchain.github.io/global.config.json -P ~/ton-env/
+wget https://ton-blockchain.github.io/testnet-global.config.json -P ~/ton-env/
 
 # Add smart contract path
 export FIFTPATH=~/ton-env/ton/crypto/fift/lib
